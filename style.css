@@ -430,3 +430,49 @@ footer {
         font-size: 2.2rem;
     }
 }
+/* Ensure text alignment for specific sections */
+.text-center {
+    text-align: center;
+}
+
+.mail-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Modal Form Specifics */
+.modal-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.modal-content textarea {
+    resize: vertical; /* Only height is adjustable */
+    width: 100%;      /* Width stays fixed to container */
+}
+
+/* Button Formatting */
+.btn-danger {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #d32f2f, #ef5350);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    flex: 1; /* Makes buttons same width */
+}
+
+.btn-primary {
+    flex: 1; /* Makes buttons same width */
+}
+
+.btn-danger:hover {
+    transform: translateY(-2px) scale(1.05);
+    filter: brightness(1.1);
+}
