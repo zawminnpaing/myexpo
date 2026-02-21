@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyExpoBiz | Premium Agricultural Exports</title>
+    <title>MyExpoBiz | Myanmar Agricultural Exports</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="product-text">
                         <h3>Premium Rice</h3>
-                        <p>High-quality long grain rice. Broken: 5% – 25% | Moisture ≤ 14%.</p>
+                        <p>High-quality long grain rice suitable for global distribution. Available in various broken percentages to meet food-grade standards.</p>
                         <button class="btn btn-primary quote-btn" data-product="Premium Rice">Request Quote</button>
                     </div>
                 </article>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="product-text">
                         <h3>Green Mung Beans</h3>
-                        <p>Sprouting grade and food grade varieties available for export.</p>
+                        <p>Specialized for sprouting and food processing. Known for high protein content and natural green luster.</p>
                         <button class="btn btn-primary quote-btn" data-product="Green Mung Beans">Request Quote</button>
                     </div>
                 </article>
@@ -78,59 +78,54 @@
                     </div>
                     <div class="product-text">
                         <h3>Urad (Black Matpe)</h3>
-                        <p>Polished and machine cleaned. Whole or split varieties.</p>
+                        <p>Machine cleaned and polished. We provide both whole and split varieties under strict quality control.</p>
                         <button class="btn btn-primary quote-btn" data-product="Urad Beans">Request Quote</button>
-                    </div>
-                </article>
-
-                <article class="product-row reverse reveal-right">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&q=80&w=800" alt="Maize">
-                    </div>
-                    <div class="product-text">
-                        <h3>Maize (Corn)</h3>
-                        <p>Feed grade maize with low moisture content for bulk shipments.</p>
-                        <button class="btn btn-primary quote-btn" data-product="Maize">Request Quote</button>
-                    </div>
-                </article>
-
-                <article class="product-row reveal-left">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1551462147-37885acc3c41?auto=format&fit=crop&q=80&w=800" alt="Black Beans">
-                    </div>
-                    <div class="product-text">
-                        <h3>Black Beans</h3>
-                        <p>Purity ≥ 98%. High quality food grade beans for global markets.</p>
-                        <button class="btn btn-primary quote-btn" data-product="Black Beans">Request Quote</button>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="about" class="section bg-light">
         <div class="container text-center">
-            <h2 class="section-title">Contact Us</h2>
+            <h2 class="section-title">About MyExpoBiz</h2>
             <div class="underline"></div>
-            <p>Email: <a href="mailto:zawminn.p@gmail.com">zawminn.p@gmail.com</a></p>
-            <p>Phone: +95 9974500087</p>
+            <p class="about-desc">We are a premier Myanmar-based agricultural exporter, dedicated to bridging the gap between local quality farms and international markets. With over a decade of experience in FOB logistics and sourcing, we ensure transparency and quality in every shipment.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-card">
+                <h2 class="section-title text-center">Contact Us</h2>
+                <div class="underline"></div>
+                <div class="contact-info text-center">
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:zawminn.p@gmail.com">zawminn.p@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> Phone: +95 9974500087</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Yangon, Myanmar</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <div class="modal" id="quoteModal">
         <div class="modal-content">
             <h3>Request Quotation</h3>
-            <p id="selectedProduct" style="color: #16a34a; font-weight: bold; margin-bottom: 10px;"></p>
-            <input type="text" id="buyerName" placeholder="Your Name">
-            <input type="email" id="buyerEmail" placeholder="Email Address">
-            <input type="tel" id="buyerPhone" placeholder="Phone Number">
-            <textarea id="buyerSpecs" placeholder="Quantity & Requirements"></textarea>
+            <p id="selectedProduct"></p>
+            <input type="text" id="buyerName" placeholder="Your Name" required>
+            <input type="email" id="buyerEmail" placeholder="Email Address" required>
+            <input type="tel" id="buyerPhone" placeholder="Phone Number" required>
+            <textarea id="buyerSpecs" placeholder="Quantity & Specific Requirements" required></textarea>
             <div class="modal-buttons">
                 <button id="submitRequest" class="btn btn-primary">Send Request</button>
                 <button id="closeModal" class="btn btn-danger">Cancel</button>
             </div>
         </div>
     </div>
+
+    <footer>
+        <p>© 2026 MyExpoBiz | Premium Myanmar Exports</p>
+    </footer>
 
 </body>
 </html>
