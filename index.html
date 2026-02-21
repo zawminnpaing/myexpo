@@ -1,198 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="description" content="MyExpoBiz - Agricultural Export Company from Myanmar">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="Myanmar agricultural export, rice exporter Myanmar, pulses export, beans exporter, FOB agriculture">
-<meta name="author" content="MyExpoBiz">
-<title>MyExpoBiz | Agricultural Exporter</title>
-
-<link rel="stylesheet" href="style.css">
-<script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="MyExpoBiz - Agricultural Export Company from Myanmar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Myanmar agricultural export, rice exporter Myanmar, pulses export, beans exporter, FOB agriculture">
+    <meta name="author" content="MyExpoBiz">
+    <title>MyExpoBiz | Agricultural Exporter</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="container nav-flex">
-    <div class="logo">
-      <svg width="38" height="38" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="48" fill="#2e7d32"/>
-        <path d="M50 15 C30 35,30 65,50 85 C70 65,70 35,50 15Z" fill="#c8e6c9"/>
-      </svg>
-      <span>MyExpoBiz</span>
-    </div>
+    <header class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">
+                <svg width="38" height="38" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="48" fill="#2e7d32"/>
+                    <path d="M50 15 C30 35,30 65,50 85 C70 65,70 35,50 15Z" fill="#c8e6c9"/>
+                </svg>
+                <span>MyExpoBiz</span>
+            </div>
+            <nav id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">☰</div>
+        </div>
+    </header>
 
-    <nav id="nav-menu">
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Trusted Agricultural Exports from Myanmar</h1>
+            <p>Flexible quality • Reliable sourcing • FOB shipments</p>
+            <a href="#products" class="btn-primary">View Products</a>
+        </div>
+    </section>
 
-    <div class="hamburger" id="hamburger">
-      ☰
-    </div>
-  </div>
-</header>
+    <section id="products" class="section alt-bg">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">🌿 Our Export Products</h2>
+                <div class="underline"></div>
+                <p>Available in multiple grades & specifications based on buyer requirements</p>
+            </div>
 
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="container">
-    <h1>Trusted Agricultural Exports from Myanmar</h1>
-    <p>Flexible quality • Reliable sourcing • FOB shipments</p>
-    <a href="#products" class="btn-primary">View Products</a>
-  </div>
-</section>
+            <div class="product-filter text-center">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="grains">Grains</button>
+                <button class="filter-btn" data-filter="pulses">Pulses</button>
+                <button class="filter-btn" data-filter="beans">Beans</button>
+            </div>
 
-<!-- PRODUCTS -->
-<section id="products" class="alt-bg">
-    <div class="container">
-        <div class="section-header text-center">
-            <h2>🌿 Our Export Products</h2>
+            <div class="product-grid">
+                <article class="export-card" data-category="grains">
+                    <div class="export-img">
+                        <img src="images/rice.jpg" alt="Rice Export">
+                    </div>
+                    <div class="export-body">
+                        <h3>Rice</h3>
+                        <ul>
+                            <li>FAQ / SQ / Food Grade</li>
+                            <li>Broken: 5% – 25%</li>
+                            <li>Moisture ≤ 14%</li>
+                            <li>25kg / 50kg PP Bags</li>
+                        </ul>
+                        <a class="btn btn-primary quote-btn" data-product="Rice">Request Quote</a>
+                    </div>
+                </article>
+
+                <article class="export-card" data-category="pulses">
+                    <div class="export-img">
+                        <img src="images/mung.jpg" alt="Green Mung Bean">
+                    </div>
+                    <div class="export-body">
+                        <h3>Green Mung (Green Gram)</h3>
+                        <ul>
+                            <li>Sprouting / Food Grade</li>
+                            <li>Natural Green Color</li>
+                            <li>Low Foreign Matter</li>
+                        </ul>
+                        <a class="btn btn-primary quote-btn" data-product="Green Mung">Request Quote</a>
+                    </div>
+                </article>
+
+                <article class="export-card" data-category="pulses">
+                    <div class="export-img">
+                        <img src="images/urad.jpg" alt="Urad Bean">
+                    </div>
+                    <div class="export-body">
+                        <h3>Urad (Black Matpe)</h3>
+                        <ul>
+                            <li>Whole / Split</li>
+                            <li>FAQ / SQ Quality</li>
+                            <li>Export-Ready Cleaning</li>
+                        </ul>
+                        <a class="btn btn-primary quote-btn" data-product="Urad">Request Quote</a>
+                    </div>
+                </article>
+
+                <article class="export-card" data-category="grains">
+                    <div class="export-img">
+                        <img src="images/maize.jpg" alt="Maize Export">
+                    </div>
+                    <div class="export-body">
+                        <h3>Maize (Corn)</h3>
+                        <ul>
+                            <li>Feed & Processing Grade</li>
+                            <li>Low Moisture</li>
+                            <li>Bulk Shipment</li>
+                        </ul>
+                        <a class="btn btn-primary quote-btn" data-product="Maize">Request Quote</a>
+                    </div>
+                </article>
+
+                <article class="export-card" data-category="beans">
+                    <div class="export-img">
+                        <img src="images/black-beans.jpg" alt="Black Beans">
+                    </div>
+                    <div class="export-body">
+                        <h3>Black Beans</h3>
+                        <ul>
+                            <li>Whole / Split</li>
+                            <li>Purity ≥ 98%</li>
+                            <li>Food & Processing Grade</li>
+                        </ul>
+                        <a class="btn btn-primary quote-btn" data-product="Black Beans">Request Quote</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section soft-bg">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
             <div class="underline"></div>
-            <p>Available in multiple grades & specifications based on buyer requirements</p>
+            <p>
+                Founded in 2026, MyExpoBiz combines over <strong>10 years of agricultural trade experience</strong>
+                with a strong sourcing network across Myanmar.
+            </p>
         </div>
+    </section>
 
-        <div class="product-filter text-center">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="grains">Grains</button>
-            <button class="filter-btn" data-filter="pulses">Pulses</button>
-            <button class="filter-btn" data-filter="beans">Beans</button>
+    <section id="contact" class="section">
+        <div class="container contact-box">
+            <h2 class="section-title">Contact</h2>
+            <div class="underline"></div>
+            <p>📍 Mayangone, Yangon, Myanmar</p>
+            <p>📞 +95 9974500087</p>
+            <p>✉️ zawminn.p@gmail.com</p>
         </div>
+    </section>
 
-        <div class="product-grid">
-
-            <!-- RICE -->
-            <article class="export-card" data-category="grains">
-                <div class="export-img">
-                    <img src="images/rice.jpg" alt="Rice Export">
-                </div>
-                <div class="export-body">
-                    <h3>Rice</h3>
-                    <ul>
-                        <li>FAQ / SQ / Food Grade</li>
-                        <li>Broken: 5% – 25%</li>
-                        <li>Moisture ≤ 14%</li>
-                        <li>25kg / 50kg PP Bags</li>
-                    </ul>
-                    <a class="btn btn-primary quote-btn" data-product="Rice">Request Quote</a>
-                </div>
-            </article>
-
-            <!-- GREEN MUNG -->
-            <article class="export-card" data-category="pulses">
-                <div class="export-img">
-                    <img src="images/mung.jpg" alt="Green Mung Bean">
-                </div>
-                <div class="export-body">
-                    <h3>Green Mung (Green Gram)</h3>
-                    <ul>
-                        <li>Sprouting / Food Grade</li>
-                        <li>Natural Green Color</li>
-                        <li>Low Foreign Matter</li>
-                    </ul>
-                    <a class="btn btn-primary quote-btn" data-product="Green Mung">Request Quote</a>
-                </div>
-            </article>
-
-            <!-- URAD -->
-            <article class="export-card" data-category="pulses">
-                <div class="export-img">
-                    <img src="images/urad.jpg" alt="Urad Bean">
-                </div>
-                <div class="export-body">
-                    <h3>Urad (Black Matpe)</h3>
-                    <ul>
-                        <li>Whole / Split</li>
-                        <li>FAQ / SQ Quality</li>
-                        <li>Export-Ready Cleaning</li>
-                    </ul>
-                    <a class="btn btn-primary quote-btn" data-product="Urad">Request Quote</a>
-                </div>
-            </article>
-
-            <!-- MAIZE -->
-            <article class="export-card" data-category="grains">
-                <div class="export-img">
-                    <img src="images/maize.jpg" alt="Maize Export">
-                </div>
-                <div class="export-body">
-                    <h3>Maize (Corn)</h3>
-                    <ul>
-                        <li>Feed & Processing Grade</li>
-                        <li>Low Moisture</li>
-                        <li>Bulk Shipment</li>
-                    </ul>
-                    <a class="btn btn-primary quote-btn" data-product="Maize">Request Quote</a>
-                </div>
-            </article>
-
-            <!-- BLACK BEANS -->
-            <article class="export-card" data-category="beans">
-                <div class="export-img">
-                    <img src="images/black-beans.jpg" alt="Black Beans">
-                </div>
-                <div class="export-body">
-                    <h3>Black Beans</h3>
-                    <ul>
-                        <li>Whole / Split</li>
-                        <li>Purity ≥ 98%</li>
-                        <li>Food & Processing Grade</li>
-                    </ul>
-                    <a class="btn btn-primary quote-btn" data-product="Black Beans">Request Quote</a>
-                </div>
-            </article>
-
+    <div class="modal" id="quoteModal">
+        <div class="modal-content">
+            <h3>Request Quotation</h3>
+            <p id="selectedProduct"></p>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Email Address">
+            <textarea rows="4" placeholder="Quantity & Specification"></textarea>
+            <a href="#" class="btn btn-primary">Submit Request</a>
+            <div class="close-modal" id="closeModal">Close</div>
         </div>
     </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about" class="section soft-bg">
-  <div class="container">
-    <h2 class="section-title">About Us</h2>
-    <p>
-      Founded in 2026, MyExpoBiz combines over <strong>10 years of agricultural trade experience</strong>
-      with a strong sourcing network across Myanmar.
-    </p>
-  </div>
-</section>
+    <a href="https://t.me/" class="telegram-float" target="_blank">✈️</a>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <div class="container contact-box">
-    <h2 class="section-title">Contact</h2>
-    <p>📍 Mayangone, Yangon, Myanmar</p>
-    <p>📞 +95 9974500087</p>
-    <p>✉️ zawminn.p@gmail.com</p>
-  </div>
-</section>
-<!-- quotemodal -->
-<div class="modal" id="quoteModal">
-    <div class="modal-content">
-        <h3>Request Quotation</h3>
-        <p id="selectedProduct"></p>
-
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Email Address">
-        <textarea rows="4" placeholder="Quantity & Specification"></textarea>
-
-        <a href="#" class="btn btn-primary">Submit Request</a>
-        <div class="close-modal">Close</div>
-    </div>
-</div>
-<!-- TELEGRAM FLOAT -->
-<a href="https://t.me/" class="telegram-float" target="_blank">
-  ✈️
-</a>
-
-<footer>
-  © 2026 MyExpoBiz
-</footer>
+    <footer>
+        <p>© 2026 MyExpoBiz</p>
+    </footer>
 
 </body>
 </html>
