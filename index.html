@@ -47,44 +47,106 @@
 </section>
 
 <!-- PRODUCTS -->
-<section id="products" class="section">
-  <div class="container">
-    <h2 class="section-title">Our Products</h2>
+<section id="products" class="alt-bg">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2>🌿 Our Export Products</h2>
+            <div class="underline"></div>
+            <p>Available in multiple grades & specifications based on buyer requirements</p>
+        </div>
 
-    <!-- PRODUCT COMPONENT -->
-    <div class="product-card">
-      <div class="product-image">
-        <img src="images/rice.jpg" alt="Rice Export">
-      </div>
-      <div class="product-content">
-        <h3>Rice</h3>
-        <ul>
-          <li>Raw / Processed</li>
-          <li>FAQ, SQ, Food Grade</li>
-          <li>Moisture ≤ 14%</li>
-          <li>25kg / 50kg bags</li>
-        </ul>
-        <a href="#contact" class="btn-secondary">Request Quote</a>
-      </div>
+        <div class="product-filter text-center">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="grains">Grains</button>
+            <button class="filter-btn" data-filter="pulses">Pulses</button>
+            <button class="filter-btn" data-filter="beans">Beans</button>
+        </div>
+
+        <div class="product-grid">
+
+            <!-- RICE -->
+            <article class="export-card" data-category="grains">
+                <div class="export-img">
+                    <img src="images/rice.jpg" alt="Rice Export">
+                </div>
+                <div class="export-body">
+                    <h3>Rice</h3>
+                    <ul>
+                        <li>FAQ / SQ / Food Grade</li>
+                        <li>Broken: 5% – 25%</li>
+                        <li>Moisture ≤ 14%</li>
+                        <li>25kg / 50kg PP Bags</li>
+                    </ul>
+                    <a class="btn btn-primary quote-btn" data-product="Rice">Request Quote</a>
+                </div>
+            </article>
+
+            <!-- GREEN MUNG -->
+            <article class="export-card" data-category="pulses">
+                <div class="export-img">
+                    <img src="images/mung.jpg" alt="Green Mung Bean">
+                </div>
+                <div class="export-body">
+                    <h3>Green Mung (Green Gram)</h3>
+                    <ul>
+                        <li>Sprouting / Food Grade</li>
+                        <li>Natural Green Color</li>
+                        <li>Low Foreign Matter</li>
+                    </ul>
+                    <a class="btn btn-primary quote-btn" data-product="Green Mung">Request Quote</a>
+                </div>
+            </article>
+
+            <!-- URAD -->
+            <article class="export-card" data-category="pulses">
+                <div class="export-img">
+                    <img src="images/urad.jpg" alt="Urad Bean">
+                </div>
+                <div class="export-body">
+                    <h3>Urad (Black Matpe)</h3>
+                    <ul>
+                        <li>Whole / Split</li>
+                        <li>FAQ / SQ Quality</li>
+                        <li>Export-Ready Cleaning</li>
+                    </ul>
+                    <a class="btn btn-primary quote-btn" data-product="Urad">Request Quote</a>
+                </div>
+            </article>
+
+            <!-- MAIZE -->
+            <article class="export-card" data-category="grains">
+                <div class="export-img">
+                    <img src="images/maize.jpg" alt="Maize Export">
+                </div>
+                <div class="export-body">
+                    <h3>Maize (Corn)</h3>
+                    <ul>
+                        <li>Feed & Processing Grade</li>
+                        <li>Low Moisture</li>
+                        <li>Bulk Shipment</li>
+                    </ul>
+                    <a class="btn btn-primary quote-btn" data-product="Maize">Request Quote</a>
+                </div>
+            </article>
+
+            <!-- BLACK BEANS -->
+            <article class="export-card" data-category="beans">
+                <div class="export-img">
+                    <img src="images/black-beans.jpg" alt="Black Beans">
+                </div>
+                <div class="export-body">
+                    <h3>Black Beans</h3>
+                    <ul>
+                        <li>Whole / Split</li>
+                        <li>Purity ≥ 98%</li>
+                        <li>Food & Processing Grade</li>
+                    </ul>
+                    <a class="btn btn-primary quote-btn" data-product="Black Beans">Request Quote</a>
+                </div>
+            </article>
+
+        </div>
     </div>
-
-    <div class="product-card reverse">
-      <div class="product-image">
-        <img src="images/beans.jpg" alt="Beans Export">
-      </div>
-      <div class="product-content">
-        <h3>Beans & Peas</h3>
-        <ul>
-          <li>Whole / Split</li>
-          <li>Purity ≥ 98%</li>
-          <li>Food & Feed Grade</li>
-          <li>Custom packing</li>
-        </ul>
-        <a href="#contact" class="btn-secondary">Request Quote</a>
-      </div>
-    </div>
-
-  </div>
 </section>
 
 <!-- ABOUT -->
@@ -107,7 +169,20 @@
     <p>✉️ zawminn.p@gmail.com</p>
   </div>
 </section>
+<!-- quotemodal -->
+<div class="modal" id="quoteModal">
+    <div class="modal-content">
+        <h3>Request Quotation</h3>
+        <p id="selectedProduct"></p>
 
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email Address">
+        <textarea rows="4" placeholder="Quantity & Specification"></textarea>
+
+        <a href="#" class="btn btn-primary">Submit Request</a>
+        <div class="close-modal">Close</div>
+    </div>
+</div>
 <!-- TELEGRAM FLOAT -->
 <a href="https://t.me/" class="telegram-float" target="_blank">
   ✈️
