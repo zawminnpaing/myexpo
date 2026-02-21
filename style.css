@@ -1,92 +1,68 @@
 :root {
     --bg-gradient: linear-gradient(135deg, #fef9c3 0%, #dcfce7 100%);
     --primary-green: #16a34a;
-    --accent-purple: #8b5cf6; /* Matching the purple from your image if preferred */
-    --glass-bg: rgba(0, 0, 0, 0.4);
+    --primary-dark: #15803d;
+    --glass-bg: rgba(0, 0, 0, 0.5);
     --glass-border: rgba(255, 255, 255, 0.2);
+    --text-dark: #166534;
 }
 
-/* HERO WITH BACKGROUND IMAGE */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body { background: var(--bg-gradient); background-attachment: fixed; color: var(--text-dark); overflow-x: hidden; }
+
+.section { padding: 80px 0; }
+.container { width: 90%; max-width: 1100px; margin: auto; }
+.text-center { text-align: center; }
+.underline { width: 60px; height: 4px; background: var(--primary-green); margin: 10px auto 40px; border-radius: 2px; }
+
+/* HERO */
 .hero-bg {
-    height: 70vh;
+    height: 75vh;
     background: url('images/header-bg.jpg') no-repeat center center/cover;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.3); /* Darkens the image slightly for text readability */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: absolute; inset: 0; background: rgba(0, 0, 0, 0.35);
+    display: flex; align-items: center; justify-content: center;
 }
 
-.hero-content {
-    text-align: center;
-    color: white;
-    z-index: 10;
-}
+.hero-content { text-align: center; color: white; }
+.hero-content h1 { font-size: 3.5rem; margin-bottom: 15px; }
 
-.hero-content h1 { font-size: 3.5rem; text-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-
-/* GLASS NAVIGATION BAR (Inspired by image_6a26a0.jpg) */
-.navbar-wrapper {
-    position: fixed;
-    top: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 1000;
-}
-
+/* NAV BAR */
+.navbar-wrapper { position: fixed; top: 20px; width: 100%; display: flex; justify-content: center; z-index: 1000; }
 .glass-nav {
-    background: var(--glass-bg);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid var(--glass-border);
-    padding: 8px;
-    border-radius: 100px;
-    display: flex;
-    gap: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    background: var(--glass-bg); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
+    border: 1px solid var(--glass-border); padding: 8px; border-radius: 100px; display: flex; gap: 5px;
 }
-
 .nav-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 25px;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    border-radius: 100px;
-    transition: 0.3s ease;
+    display: flex; align-items: center; gap: 8px; padding: 10px 20px;
+    text-decoration: none; color: white; border-radius: 100px; transition: 0.3s;
 }
+.nav-item.active { background: var(--primary-green); box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4); }
 
-.nav-item i { font-size: 1.1rem; }
+/* PRODUCT ROWS & ANIMATIONS */
+.product-row { display: flex; align-items: center; gap: 50px; margin-bottom: 100px; opacity: 0; transition: 1s ease-out; }
+.product-row.reverse { flex-direction: row-reverse; }
+.product-img { flex: 1; }
+.product-img img { width: 100%; height: 300px; object-fit: cover; border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.product-text { flex: 1; }
 
-/* Active/Hover State */
-.nav-item.active, .nav-item:hover {
-    background: var(--primary-green); /* Using green to match your agriculture theme */
-    box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4);
-}
+.reveal-left { transform: translateX(-100px); }
+.reveal-right { transform: translateX(100px); }
+.reveal-left.active, .reveal-right.active { opacity: 1; transform: translateX(0); }
 
 /* BUTTONS */
-.btn-outline-white {
-    border: 2px solid white;
-    color: white;
-    padding: 12px 28px;
-    border-radius: 30px;
-    text-decoration: none;
-    margin-left: 10px;
-    transition: 0.3s;
-}
+.btn { padding: 12px 25px; border-radius: 30px; border: none; cursor: pointer; font-weight: 600; text-decoration: none; display: inline-block; transition: 0.3s; }
+.btn-primary { background: var(--primary-green); color: white; }
+.btn-outline-white { border: 2px solid white; color: white; margin-left: 10px; }
+.btn-outline-white:hover { background: white; color: var(--primary-green); }
+.btn-danger { background: #ef4444; color: white; }
 
-.btn-outline-white:hover {
-    background: white;
-    color: var(--primary-green);
-}
+/* MODAL */
+.modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(5px); z-index: 2000; justify-content: center; align-items: center; }
+.modal-content { background: white; padding: 30px; border-radius: 20px; width: 400px; display: flex; flex-direction: column; gap: 10px; }
+.modal-content input, .modal-content textarea { padding: 10px; border-radius: 8px; border: 1px solid #ddd; }
+.modal-buttons { display: flex; gap: 10px; margin-top: 10px; }
