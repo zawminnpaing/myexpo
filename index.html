@@ -3,165 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyExpoBiz | Myanmar Agricultural Exporter</title>
+    <title>MyExpoBiz | Premium Agricultural Exports</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
 
     <header class="navbar-wrapper">
-        <nav class="pill-nav">
-            <div class="logo">
-                <svg width="30" height="30" viewBox="0 0 100 100">
-                    <circle cx="50" cy="50" r="48" fill="#16a34a"/>
-                    <path d="M50 20 L80 80 L20 80 Z" fill="white"/>
-                </svg>
-                <span>MyExpoBiz</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">☰</div>
+        <nav class="glass-nav">
+            <a href="#home" class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#products" class="nav-item">
+                <i class="fas fa-seedling"></i>
+                <span>Products</span>
+            </a>
+            <a href="#about" class="nav-item">
+                <i class="fas fa-chart-line"></i>
+                <span>About</span>
+            </a>
+            <a href="#contact" class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Contact</span>
+            </a>
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="container text-center">
-            <h1>Trusted Agricultural Exports</h1>
-            <p>Flexible quality • Reliable sourcing • FOB shipments from Myanmar</p>
-            <a href="#products" class="btn btn-primary">View Products</a>
-        </div>
-    </section>
-
-    <section id="products" class="section">
-        <div class="container">
-            <h2 class="section-title text-center">Our Export Products</h2>
-            <div class="underline"></div>
-
-            <div class="zigzag-container">
-                <article class="product-row reveal-left">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80&w=800" alt="Rice">
-                    </div>
-                    <div class="product-text">
-                        <h3>Premium Rice</h3>
-                        <ul>
-                            <li>FAQ / SQ / Food Grade</li>
-                            <li>Broken: 5% – 25% | Moisture ≤ 14%</li>
-                            <li>25kg / 50kg PP Bags</li>
-                        </ul>
-                        <button class="btn btn-primary quote-btn" data-product="Premium Rice">Request Quote</button>
-                    </div>
-                </article>
-
-                <article class="product-row reverse reveal-right">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1547602058-2923985b1418?auto=format&fit=crop&q=80&w=800" alt="Green Mung Beans">
-                    </div>
-                    <div class="product-text">
-                        <h3>Green Mung (Green Gram)</h3>
-                        <ul>
-                            <li>Sprouting / Food Grade</li>
-                            <li>Natural Green Color</li>
-                            <li>Low Foreign Matter</li>
-                        </ul>
-                        <button class="btn btn-primary quote-btn" data-product="Green Mung Beans">Request Quote</button>
-                    </div>
-                </article>
-
-                <article class="product-row reveal-left">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&q=80&w=800" alt="Urad Beans">
-                    </div>
-                    <div class="product-text">
-                        <h3>Urad (Black Matpe)</h3>
-                        <ul>
-                            <li>Whole / Split Varieties</li>
-                            <li>FAQ / SQ Export Quality</li>
-                            <li>Polished & Machine Cleaned</li>
-                        </ul>
-                        <button class="btn btn-primary quote-btn" data-product="Urad Beans">Request Quote</button>
-                    </div>
-                </article>
-
-                <article class="product-row reverse reveal-right">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&q=80&w=800" alt="Maize">
-                    </div>
-                    <div class="product-text">
-                        <h3>Maize (Corn)</h3>
-                        <ul>
-                            <li>Feed & Processing Grade</li>
-                            <li>Low Moisture Content</li>
-                            <li>Bulk Container Shipments</li>
-                        </ul>
-                        <button class="btn btn-primary quote-btn" data-product="Maize">Request Quote</button>
-                    </div>
-                </article>
-
-                <article class="product-row reveal-left">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1551462147-37885acc3c41?auto=format&fit=crop&q=80&w=800" alt="Black Beans">
-                    </div>
-                    <div class="product-text">
-                        <h3>Black Beans</h3>
-                        <ul>
-                            <li>Whole / Split</li>
-                            <li>Purity ≥ 98%</li>
-                            <li>High Quality Food Grade</li>
-                        </ul>
-                        <button class="btn btn-primary quote-btn" data-product="Black Beans">Request Quote</button>
-                    </div>
-                </article>
+    <section id="home" class="hero-bg">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Trusted Agricultural Exports</h1>
+                <p>Flexible quality • Reliable sourcing • FOB shipments from Myanmar</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn btn-primary">View Products</a>
+                    <a href="https://t.me/Zawm96" class="btn btn-outline-white">Live Chat</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="section reveal-left">
-        <div class="container text-center">
-            <h2 class="section-title">About Us</h2>
-            <div class="underline"></div>
-            <p>Founded in 2026, MyExpoBiz leverages over 10 years of trade experience to connect Myanmar's farmers with global markets.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="section reveal-right">
-        <div class="container text-center">
-            <div class="contact-card">
-                <h2 class="section-title">Contact Information</h2>
-                <div class="underline"></div>
-                <p>📍 Mayangone, Yangon, Myanmar</p>
-                <p>📞 +95 9974500087</p>
-                <p>✉️ <a href="mailto:zawminn.p@gmail.com" class="mail-link">zawminn.p@gmail.com</a></p>
-            </div>
-        </div>
-    </section>
-
-    <div class="modal" id="quoteModal">
-        <div class="modal-content">
-            <h3>Request Quotation</h3>
-            <p id="selectedProduct" style="color: #16a34a; font-weight: bold;"></p>
-            
-            <input type="text" id="buyerName" placeholder="Your Name">
-            <input type="email" id="buyerEmail" placeholder="Email Address">
-            <input type="tel" id="buyerPhone" placeholder="Phone Number (e.g. +95...)">
-            <textarea id="buyerSpecs" rows="4" placeholder="Quantity & Specific Requirements"></textarea>
-
-            <div class="modal-buttons">
-                <button id="submitRequest" class="btn btn-primary">Submit Request</button>
-                <button id="closeModal" class="btn btn-danger">Close</button>
-            </div>
-        </div>
-    </div>
-
-    <a href="https://t.me/Zawm96" class="telegram-float" target="_blank">✈️</a>
-
-    <footer>
-        <p>© 2026 MyExpoBiz - Myanmar Agricultural Exports</p>
-    </footer>
-
-</body>
+    </body>
 </html>
