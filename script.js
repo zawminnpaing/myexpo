@@ -38,9 +38,11 @@ filterBtns.forEach(btn => {
 // =============================
 // QUOTE MODAL
 // =============================
+// QUOTE MODAL LOGIC
 const modal = document.getElementById('quoteModal');
 const productText = document.getElementById('selectedProduct');
 const closeModalBtn = document.getElementById('closeModal');
+const submitBtn = document.getElementById('submitRequest');
 
 // Open Modal
 document.querySelectorAll('.quote-btn').forEach(btn => {
@@ -50,16 +52,44 @@ document.querySelectorAll('.quote-btn').forEach(btn => {
     });
 });
 
-// Close Modal (Button Click)
-if (closeModalBtn) {
-    closeModalBtn.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
-}
+// Close Modal
+closeModalBtn.onclick = () => {
+    modal.style.display = 'none';
+};
 
-// Close Modal (Clicking Outside)
-window.addEventListener('click', (e) => {
-    if (e.target === modal) {
+// Handle Submit (Mailto)
+submitBtn.addEventListener('click', () => {
+    const name = document.getElementById('buyerName').value;
+    const email = document.getElementById('buyerEmail').value;
+    const phone = document.getElementById('buyerPhone').value;
+    const specs = document.getElementById('buyerSpecs').value;
+    const product = productText.textContent;
+
+    if(!name || !email) {
+        alert("Please fill in at least your name and email.");
+        return;
+    }
+
+    const subject = encodeURIComponent(`Quotation Request: ${product}`);
+    const body = encodeURIComponent(
+        `Hello MyExpoBiz,\n\nI would like to request a quote.\n\n` +
+        `Product: ${product}\n` +
+        `Customer Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Phone: ${phone}\n` +
+        `Specifications: ${specs}`
+    );
+
+    // Trigger user's mail app
+    window.location.href = `mailto:zawminn.p@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Close modal after sending
+    modal.style.display = 'none';
+});
+
+// Close on outside click
+window.onclick = (event) => {
+    if (event.target == modal) {
         modal.style.display = 'none';
     }
-});
+};
