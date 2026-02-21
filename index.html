@@ -136,41 +136,45 @@
         </div>
     </section>
 
-    <section id="about" class="section soft-bg">
-        <div class="container">
-            <h2 class="section-title">About Us</h2>
-            <div class="underline"></div>
-            <p>
-                Founded in 2026, MyExpoBiz combines over <strong>10 years of agricultural trade experience</strong>
-                with a strong sourcing network across Myanmar.
-            </p>
-        </div>
-    </section>
+<section id="about" class="section soft-bg text-center">
+    <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="underline"></div>
+        <p>
+            Founded in 2026, MyExpoBiz combines over <strong>10 years of agricultural trade experience</strong>
+            with a strong sourcing network across Myanmar.
+        </p>
+    </div>
+</section>
 
-    <section id="contact" class="section">
-        <div class="container contact-box">
-            <h2 class="section-title">Contact</h2>
-            <div class="underline"></div>
-            <p>📍 Mayangone, Yangon, Myanmar</p>
-            <p>📞 +95 9974500087</p>
-            <p>✉️ zawminn.p@gmail.com</p>
-        </div>
-    </section>
+<section id="contact" class="section text-center">
+    <div class="container contact-box">
+        <h2 class="section-title">Contact</h2>
+        <div class="underline"></div>
+        <p>📍 Mayangone, Yangon, Myanmar</p>
+        <p>📞 +95 9974500087</p>
+        <p>✉️ <a href="mailto:zawminn.p@gmail.com" class="mail-link">zawminn.p@gmail.com</a></p>
+    </div>
+</section>
 
-    <div class="modal" id="quoteModal">
-        <div class="modal-content">
-            <h3>Request Quotation</h3>
-            <p id="selectedProduct"></p>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Email Address">
-            <textarea rows="4" placeholder="Quantity & Specification"></textarea>
-            <a href="#" class="btn btn-primary">Submit Request</a>
-            <div class="close-modal" id="closeModal">Close</div>
+<div class="modal" id="quoteModal">
+    <div class="modal-content">
+        <h3>Request Quotation</h3>
+        <p id="selectedProduct"></p>
+        
+        <input type="text" id="buyerName" placeholder="Your Name">
+        <input type="email" id="buyerEmail" placeholder="Email Address">
+        <input type="tel" id="buyerPhone" placeholder="Phone Number (e.g. +95...)">
+        <textarea id="buyerSpecs" rows="4" placeholder="Quantity & Specification"></textarea>
+
+        <div class="modal-buttons">
+            <button id="submitRequest" class="btn btn-primary">Submit Request</button>
+            <button id="closeModal" class="btn btn-danger">Close</button>
         </div>
     </div>
+</div>
 
-    <a href="https://t.me/" class="telegram-float" target="_blank">✈️</a>
-
+<a href="https://t.me/Zawm96" class="telegram-float" target="_blank">✈️</a>
     <footer>
         <p>© 2026 MyExpoBiz</p>
     </footer>
