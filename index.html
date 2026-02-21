@@ -44,5 +44,93 @@
         </div>
     </section>
 
-    </body>
+    <section id="products" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Our Export Products</h2>
+            <div class="underline"></div>
+
+            <div class="zigzag-container">
+                <article class="product-row reveal-left">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80&w=800" alt="Rice">
+                    </div>
+                    <div class="product-text">
+                        <h3>Premium Rice</h3>
+                        <p>High-quality long grain rice. Broken: 5% – 25% | Moisture ≤ 14%.</p>
+                        <button class="btn btn-primary quote-btn" data-product="Premium Rice">Request Quote</button>
+                    </div>
+                </article>
+
+                <article class="product-row reverse reveal-right">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1547602058-2923985b1418?auto=format&fit=crop&q=80&w=800" alt="Green Mung">
+                    </div>
+                    <div class="product-text">
+                        <h3>Green Mung Beans</h3>
+                        <p>Sprouting grade and food grade varieties available for export.</p>
+                        <button class="btn btn-primary quote-btn" data-product="Green Mung Beans">Request Quote</button>
+                    </div>
+                </article>
+
+                <article class="product-row reveal-left">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&q=80&w=800" alt="Urad">
+                    </div>
+                    <div class="product-text">
+                        <h3>Urad (Black Matpe)</h3>
+                        <p>Polished and machine cleaned. Whole or split varieties.</p>
+                        <button class="btn btn-primary quote-btn" data-product="Urad Beans">Request Quote</button>
+                    </div>
+                </article>
+
+                <article class="product-row reverse reveal-right">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&q=80&w=800" alt="Maize">
+                    </div>
+                    <div class="product-text">
+                        <h3>Maize (Corn)</h3>
+                        <p>Feed grade maize with low moisture content for bulk shipments.</p>
+                        <button class="btn btn-primary quote-btn" data-product="Maize">Request Quote</button>
+                    </div>
+                </article>
+
+                <article class="product-row reveal-left">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1551462147-37885acc3c41?auto=format&fit=crop&q=80&w=800" alt="Black Beans">
+                    </div>
+                    <div class="product-text">
+                        <h3>Black Beans</h3>
+                        <p>Purity ≥ 98%. High quality food grade beans for global markets.</p>
+                        <button class="btn btn-primary quote-btn" data-product="Black Beans">Request Quote</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container text-center">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="underline"></div>
+            <p>Email: <a href="mailto:zawminn.p@gmail.com">zawminn.p@gmail.com</a></p>
+            <p>Phone: +95 9974500087</p>
+        </div>
+    </section>
+
+    <div class="modal" id="quoteModal">
+        <div class="modal-content">
+            <h3>Request Quotation</h3>
+            <p id="selectedProduct" style="color: #16a34a; font-weight: bold; margin-bottom: 10px;"></p>
+            <input type="text" id="buyerName" placeholder="Your Name">
+            <input type="email" id="buyerEmail" placeholder="Email Address">
+            <input type="tel" id="buyerPhone" placeholder="Phone Number">
+            <textarea id="buyerSpecs" placeholder="Quantity & Requirements"></textarea>
+            <div class="modal-buttons">
+                <button id="submitRequest" class="btn btn-primary">Send Request</button>
+                <button id="closeModal" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>
